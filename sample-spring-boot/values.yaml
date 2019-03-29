@@ -1,0 +1,6 @@
+image: studallianz/sample-spring-boot:latest
+url: /spring-boot
+replicas: 3
+ingress:
+  path: /spring-boot
+  host: sample.info
