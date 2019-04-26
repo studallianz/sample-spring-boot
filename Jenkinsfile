@@ -1,0 +1,3 @@
+node {
+    echo 'Spring boot'
+}
