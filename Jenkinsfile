@@ -1,3 +1,6 @@
 node {
-    echo 'Spring boot'
+    stage('Sample stage'){
+        echo 'Spring boot'
+    }
+
 }
