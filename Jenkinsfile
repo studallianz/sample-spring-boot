@@ -1,5 +1,5 @@
-node('maven') {
+node('gradle') {
     stage('Build'){
-        sh('mvn clean package')
+        sh('mvn gradlew build')
     }
 }
