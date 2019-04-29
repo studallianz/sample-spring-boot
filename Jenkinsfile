@@ -1,5 +1,5 @@
 node() {
     stage('Build'){
-        sh('mvn gradlew build')
+        sh('gradlew build')
     }
 }
