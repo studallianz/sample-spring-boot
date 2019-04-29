@@ -1,7 +1,5 @@
-node {
+node('maven') {
     stage('Build'){
-        withMaven(){
-            sh('mvn clean package')
-        }
+        sh('mvn clean package')
     }
 }
