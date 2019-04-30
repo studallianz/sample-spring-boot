@@ -2,7 +2,11 @@ node('maven') {
     stage('Checkout'){
         git('https://github.com/studallianz/sample-spring-boot')
     }
-    stage('Build'){
+    stage('Build jar'){
         sh('mvn clean package')
+    }
+
+    stage('Build image'){
+        sh('docker build -t sample-spring-boot .')
     }
 }
