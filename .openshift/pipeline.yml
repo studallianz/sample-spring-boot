@@ -8,4 +8,4 @@ spec:
       uri: "https://github.com/studallianz/sample-spring-boot"
   strategy:
     jenkinsPipelineStrategy:
-      jenkinsfilePath: ./jenkins/Jenkinsfile
+      jenkinsfilePath: .jenkins/Jenkinsfile

@@ -5,4 +5,9 @@ node('maven') {
     stage('Build'){
         sh('mvn clean package')
     }
+    post {
+        always {
+            junit 'build/reports/**/*.xml'
+        }
+    }
 }
