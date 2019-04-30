@@ -7,6 +7,6 @@ node('maven') {
     }
 
     stage('Build image'){
-        sh('docker build -t sample-spring-boot .')
+        sh('oc start-build mavenapp -n sample-spring-boot')
     }
 }
