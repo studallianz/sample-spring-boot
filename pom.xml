@@ -4,6 +4,23 @@
   <groupId>com.allianz</groupId>
   <artifactId>sample-spring-boot</artifactId>
   <version>1.0</version>
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>LATEST</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>hello.Application</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
