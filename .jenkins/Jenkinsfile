@@ -1,0 +1,8 @@
+node('maven') {
+    stage('Checkout'){
+        git('https://github.com/studallianz/sample-spring-boot')
+    }
+    stage('Build'){
+        sh('mvn clean package')
+    }
+}
