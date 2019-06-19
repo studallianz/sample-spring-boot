@@ -37,8 +37,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: sample.info
-      http:
+    - http:
         paths:
           - path: /spring-boot
             backend:

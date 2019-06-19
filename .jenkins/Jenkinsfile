@@ -7,6 +7,6 @@ node('maven') {
     }
 
     stage('Build image'){
-        sh('oc start-build mavenapp -n sample-spring-boot --from-dir . --follow')
+        sh('oc start-build sample-spring-boot --from-dir . --follow')
     }
 }
